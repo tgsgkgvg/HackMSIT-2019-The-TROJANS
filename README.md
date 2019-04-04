@@ -10,7 +10,6 @@
 ## Idea and Plan of Action:
 
 hackmsit.pdf uploaded in the repository<br></br>
-<br></br>
 otherwise, google drive llink:
 https://drive.google.com/open?id=1hSzVGzTZN2sSl8b35Jh9wLkS0NAyERdA
 
