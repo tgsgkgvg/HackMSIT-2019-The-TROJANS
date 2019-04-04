@@ -1,15 +1,23 @@
 {% extends "layout.html" %}
 
 {% block head %}
-    {{ super() }}
+{{ super() }}
 {% endblock %}
 
 {% block content %}
 
-<h1 class="ui header">{{title}}</h1>
+<!-- <h1 class="ui header">{{title}}</h1> -->
 {% if current_user.is_authenticated %}
+<!-- <center> -->
+  <!-- <img
+    src="https://www.popsci.com/sites/popsci.com/files/styles/1000_1x_/public/images/2018/08/untitled.png?itok=ualUMeJN&fc=50,50"> -->
+<!-- </center> -->
+<form action="http://localhost:5000/uploaded" method="POST" enctype="multipart/form-data">
+  <input class="ui primary button" type="file" name="file" />
+  <input class="ui primary button" style="font-size: 1.2em;" value="Submit" type="submit" />
+</form>
 
-<!Doctype html>
+<!-- <!Doctype html>
 <html>
 <body>
 
@@ -35,11 +43,11 @@
     
   </form>
   </body>
-  </html> 
+  </html>  -->
 
 
 
 
-  	{% endif %}
+{% endif %}
 
 {% endblock %}

@@ -1,4 +1,3 @@
-
 from flask import render_template, jsonify, Flask, redirect, url_for, request
 from app import app
 import random
@@ -33,7 +32,7 @@ def upload_file():
       preds_decoded = decode_predictions(preds, top=3)[0] 
       print(decode_predictions(preds, top=3)[0])
       f.save(path)
-      return render_template('uploaded.html', title='Success', predictions=preds_decoded, user_image=f.filename)
+   return render_template('uploaded.html', title='Success', predictions=preds_decoded, user_image=f.filename)
 
 
 @app.route('/index')
